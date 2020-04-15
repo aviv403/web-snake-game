@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>snake-game</title>
+    <link rel="shortcut icon" href="#"> <!--for disabled the favicon error (bad solution!)-->
+</head>
+    <body>
+        <!-- <div class="menu">
+            <canvas width="400" height="500">
+                <button>New Game</button>
+                <span>ssssssssss</span>
+            </canvas>
+        </div> -->
+        <div class="newgame">
+            <h4 class="timer">Time: 0</h4>
+            <div class="life" style="text-align: center;">
+                <img src="./life.jpg" width="50" height="30">
+                <img src="./life.jpg" width="50" height="30">
+                <img src="./life.jpg" width="50" height="30">
+            </div>
+            <h2 class="level">Level 1</h2>
+            <h3 class="score" style="color: aqua; text-align: center;">
+                <img src="./apple2.png" style="display: inline;" id="image2" alt="" width="20" height="20">
+                <div id="score" style="display: inline; font-size: 24px;">0</div>
+            </h3>
+            <button id="ng-btn">Start New Game</button>
+            <canvas id="ng-canvas" width="700" height="400"> <!-- width="500" height="400" -->
+                <img src="./apple.png" id="image" alt="">
+                <img src="./brick.png" id="brick" alt="">
+                <img src="./tail.png" id="tail" alt="">
+            </canvas>    
+        </div>
+        <script type="text/javascript" src="./brick.js"></script>
+        <script type="text/javascript" src="./fruit.js"></script>
+        <script type="text/javascript" src="./snake.js"></script>
+        <script type="text/javascript" src="./draw.js"></script>
+        <script type="text/javascript" src="./menu.js"></script>
+    </body>
+</html>
