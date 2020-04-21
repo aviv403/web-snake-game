@@ -128,7 +128,9 @@ function Draw(){
         brick.pickLocation(level)
         fruit.pickLocation()
         score = 0;
+        scoreLimit = 5;
         timer = 0;
+        s.innerText = score + ' / ' + scoreLimit;
         t[0].innerText = "Time: " + timer;
     }
 
