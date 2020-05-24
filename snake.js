@@ -17,12 +17,6 @@ class Snake {
         this.draw = () => {
             ctx.fillStyle = "green";
 
-            // for(let i=0 ; i<this.tail.length ; i++){
-            //     ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale)
-            // }
-
-            // ctx.fillRect(this.x, this.y, scale, scale);
-
             for(let i=0 ; i<this.tail.length ; i++){
                 ctx.drawImage(this.tailImg, this.tail[i].x, this.tail[i].y, scale, scale);
             }
